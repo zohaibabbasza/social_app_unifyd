@@ -1,0 +1,221 @@
+GET http://localhost:8000/users/blocked/
+Content-Type: application/json
+Authorization: Token cda419ee0d5feeb59d3fac142ef80829af5ff66c
+#################
+POST http://localhost:8000/users/friend-request/
+Content-Type: application/json
+Authorization: Token 6b7190651df86dbbd292cf72c1238f96a941afa3
+
+{
+    "user":1
+}
+#################
+GET http://localhost:8000/users/friend-request/
+Content-Type: application/json
+Authorization: Token 6b7190651df86dbbd292cf72c1238f96a941afa3
+#################
+GET http://localhost:8000/users/friend-request/
+Content-Type: application/json
+Authorization: Token 6b7190651df86dbbd292cf72c1238f96a941afa3
+#################
+POST http://localhost:8000/users/accept/friend-request/
+Content-Type: application/json
+Authorization: Token cda419ee0d5feeb59d3fac142ef80829af5ff66c
+
+{
+    "fr_id":3
+}
+#################
+POST http://localhost:8000/users/block/user/
+Content-Type: application/json
+Authorization: Token 6b7190651df86dbbd292cf72c1238f96a941afa3
+
+{
+    "b_id":1
+}
+#################
+GET http://localhost:8000/users/friends/
+Content-Type: application/json
+Authorization: Token 6b7190651df86dbbd292cf72c1238f96a941afa3
+#################
+GET http://localhost:8000/users/blocked/
+Content-Type: application/json
+Authorization: Token 6b7190651df86dbbd292cf72c1238f96a941afa3
+#################
+GET http://localhost:8000/api/v1/chats/
+Content-Type: application/json
+Authorization: Token 6b7190651df86dbbd292cf72c1238f96a941afa3
+###########################
+POST http://localhost:8000/api/v1/chats/
+Content-Type: application/json
+Authorization: Token 6b7190651df86dbbd292cf72c1238f96a941afa3
+
+{
+    "to_user":1
+}
+#################
+GET http://localhost:8000/api/v1/group-category-count/
+Content-Type: application/json
+Authorization: Token 6b7190651df86dbbd292cf72c1238f96a941afa3
+########
+###########################
+POST http://localhost:8000/api/v1/poll/
+Content-Type: application/json
+Authorization: Token cda419ee0d5feeb59d3fac142ef80829af5ff66c
+
+{
+    "name":"dsdd",
+    "text":"sssss",
+    "post":1
+
+}
+###########################
+POST http://localhost:8000/api/group-remove-member/
+Content-Type: application/json
+Authorization: Token cda419ee0d5feeb59d3fac142ef80829af5ff66c
+
+{
+    "u_id":1,
+    "group_id":1
+
+}
+###########################
+GET http://localhost:8000/api/v1/all-group-post/
+Content-Type: application/json
+Authorization: Token cda419ee0d5feeb59d3fac142ef80829af5ff66c
+
+###########################
+GET http://localhost:8000/api/v1/all-group-post/
+Content-Type: application/json
+Authorization: Token cda419ee0d5feeb59d3fac142ef80829af5ff66c
+###########################
+GET http://localhost:8000/users/friend-suggestion/
+Content-Type: application/json
+Authorization: Token cda419ee0d5feeb59d3fac142ef80829af5ff66c
+###########################
+POST http://localhost:8000/api/v1/like/
+Content-Type: application/json
+Authorization: Token cda419ee0d5feeb59d3fac142ef80829af5ff66c
+
+{
+    "post":"1"
+}
+############
+###########################
+POST http://localhost:8000/api/v1/re-post/
+Content-Type: application/json
+Authorization: Token cda419ee0d5feeb59d3fac142ef80829af5ff66c
+
+{
+    "post_id":"2",
+    "text":"zaza"
+}
+#############
+###########################
+GET http://localhost:8000/api/v1/user-posts/
+Content-Type: application/json
+Authorization: Token cda419ee0d5feeb59d3fac142ef80829af5ff66c
+###########################
+POST http://localhost:8000/api/v1/share-link/
+Content-Type: application/json
+Authorization: Token cda419ee0d5feeb59d3fac142ef80829af5ff66c
+
+{
+    "post_id":"1"
+}
+###########################
+POST http://localhost:8000/api/v1/user-posts/
+Content-Type: application/json
+Authorization: Token cda419ee0d5feeb59d3fac142ef80829af5ff66c
+
+{
+    "title":"2",
+    "text":"zaza"
+}
+###########################
+GET http://localhost:8000/api/v1/chats/
+Content-Type: application/json
+Authorization: Token 6b7190651df86dbbd292cf72c1238f96a941afa3
+###########################
+GET https://unifyd-app2-36806.botics.co/api/v1/chats/
+Content-Type: application/json
+Authorization: Token 9ed81328328d3bade8b693d229076e8cc69c710d
+#########
+###########################
+POST http://localhost:8000/users/username/check/
+Content-Type: application/json
+Authorization: Token cda419ee0d5feeb59d3fac142ef80829af5ff66c
+
+{
+    "username":"za12"
+}
+#####
+###########################
+GET http://localhost:8000/api/v1/poll/
+Content-Type: application/json
+Authorization: Token cda419ee0d5feeb59d3fac142ef80829af5ff66c
+###########################
+GET https://unifyd-app2-36806.botics.co/users/friend-suggestion/
+Content-Type: application/json
+Authorization: Token 9ed81328328d3bade8b693d229076e8cc69c710d
+###########################
+GET http://localhost:8000/users/friend-suggestion/
+Content-Type: application/json
+Authorization: Token cda419ee0d5feeb59d3fac142ef80829af5ff66c
+###########################
+GET http://localhost:8000/api/v1/chats/
+Content-Type: application/json
+Authorization: Token cda419ee0d5feeb59d3fac142ef80829af5ff66c
+#################
+POST https://unifyd-app2-36806.botics.co/api/v1/group/
+Content-Type: application/json
+Authorization: Token cda419ee0d5feeb59d3fac142ef80829af5ff66c
+
+{
+    "name": "ZA",
+    "description": "ZA"
+}
+###########################
+GET https://unifyd-app2-36806.botics.co/api/v1/notifications/
+Content-Type: application/json
+Authorization: Token 9ed81328328d3bade8b693d229076e8cc69c710d
+
+{
+    "name": "ZA",
+    "description": "ZA"
+}
+###########################
+GET http://localhost:8000/api/v1/notifications/
+Content-Type: application/json
+Authorization: Token 620e7c04a38630615b66f2e05f2e66e6ba8239dc
+############
+###########################
+GET http://localhost:8000/users/find/unifynder/
+Content-Type: application/json
+Authorization: Token 620e7c04a38630615b66f2e05f2e66e6ba8239dc
+###########################
+POST http://localhost:8000/api/v1/group-join-member/
+Content-Type: application/json
+Authorization: Token 620e7c04a38630615b66f2e05f2e66e6ba8239dc
+
+{
+    "group_id": 1
+}
+#################
+POST https://unifyd-app2-36806.botics.co/api/v1/group/
+Content-Type: application/json
+Authorization: Token 8ecefd42fa4fd76eba3edf45c2fc73ea6c1b4bb5
+
+{
+    "name": "ZA",
+    "description": "ZA"
+}
+#################
+GET http://localhost:8000/users/profile/
+Content-Type: application/json
+Authorization: Token cda419ee0d5feeb59d3fac142ef80829af5ff66c
+#################
+GET http://localhost:8000/users/profile/1/
+Content-Type: application/json
+Authorization: Token cda419ee0d5feeb59d3fac142ef80829af5ff66c
+###########
