@@ -1,23 +1,9 @@
-# unifyd_app2_36806
-
-This is a repository for a web application developed with Django, built with [Crowdbotics](https://crowdbotics.com)
-
-## Table of Contents
-
-1. [Project Structure](#project-structure)
-2. [Features](#features)
-3. [Getting Started: Backend](#getting-started-backend)
-   - [Docker Setup (recommended)](#docker-setup-recommended)
-   - [Local Setup](#local-setup-alternative-to-docker)
-4. [Usage](#usage)
-   - [Admin Panel](#admin-panel)
-   - [API Documentation](#api-documentation)
-
+# unifyd_app2_3680
 ## Project Structure
 
     ..
     ├── home                           # Starter home app
-    ├── modules                        # Crowdbotics Modules app
+    ├── modules                        
     ├── unifyd_app2_36806  # Django project configurations
     ├── static                         # Static assets
     ├── users                          # Starter users app
